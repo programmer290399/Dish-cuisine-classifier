@@ -6,7 +6,7 @@ from google_images_download import google_images_download
 response = google_images_download.googleimagesdownload()   
 item = input("enter the keywords :")
 num = input("Enter number of images to scrape :")
-arguments = {"keywords": item ,"limit": int(num) ,"print_urls":True}  
+arguments = {"keywords": item ,"limit": int(num) ,"print_urls":True , 'chromedriver': 'H:\\rps\\python\\Food_Image_Classifier\\chromedriver.exe'}  
 paths = response.download(arguments)   
 
 path_list = paths[item]
